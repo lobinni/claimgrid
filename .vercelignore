@@ -1,0 +1,16 @@
+# Only the static frontend build runs on Vercel. Everything below is
+# contract/tooling material that the `npm run build` output never reads.
+.git
+.vercel
+node_modules
+dist
+apps/web/dist
+.env
+.env.local
+sample.env
+docs/
+scripts/
+deployments/
+packages/contracts/
+.pytest_cache/
+__pycache__/

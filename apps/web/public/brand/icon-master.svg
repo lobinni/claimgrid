@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title>ClaimGrid</title>
+  <desc>Four rounded tiles forming a compact verification grid.</desc>
+  <rect width="512" height="512" rx="112" fill="#171713"/>
+  <g fill="#d9e9ce">
+    <rect x="120" y="120" width="112" height="112" rx="20"/>
+    <rect x="280" y="120" width="112" height="112" rx="20"/>
+    <rect x="120" y="280" width="112" height="112" rx="20"/>
+    <rect x="280" y="280" width="112" height="112" rx="20"/>
+  </g>
+  <circle cx="256" cy="256" r="18" fill="#171713"/>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "claimgrid",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/web",
+    "packages/shared"
+  ],
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build && node scripts/sync-dist.mjs",
+    "start": "node scripts/serve.mjs",
+    "preview": "npm --workspace apps/web run preview",
+    "test": "npm --workspace apps/web run test && python -m pytest packages/contracts/tests",
+    "test:web": "npm --workspace apps/web run test",
+    "test:contract": "python -m pytest packages/contracts/tests",
+    "lint:contract": "python scripts/check_contract.py",
+    "generate:icon": "node scripts/generate-icon.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "sharp": "^0.34.3"
+  }
+}
